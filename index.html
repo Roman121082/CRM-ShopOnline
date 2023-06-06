@@ -6,54 +6,63 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CRM-ShopOnline</title>
+  <style>
+    form {
+      max-width: 315px;
+    }
+  </style>
 </head>
 
 <body>
-  <p><b>Добавить товар</b></p>
-  <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
-    <fieldset>
-      <label>
-        <p>Наименование</p>
-        <input type="text" name="name" minlength="8">
-      </label>
+  <header>
+    <p><b>Добавить товар</b></p>
+  </header>
+  <main>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+      <fieldset>
+        <label>
+          <p>Наименование</p>
+          <input type="text" name="name" minlength="3">
+        </label>
 
-      <label>
-        <p>Категория</p>
-        <input type="text" name="caregory">
-      </label>
+        <label>
+          <p>Категория</p>
+          <input type="text" name="caregory">
+        </label>
 
-      <label>
-        <p>Единицы измерения</p>
-        <input type="text" name="units">
-      </label>
+        <label>
+          <p>Единицы измерения</p>
+          <input type="text" name="units">
+        </label>
 
-      <label>
-        <p>Дисконт</p>
-        <input type="checkbox">
-        <input type="text" name="translation">
-      </label>
+        <label>
+          <p>Дисконт</p>
+          <input type="checkbox">
+          <input type="text" name="translation">
+        </label>
 
-      <label>
-        <p>Описание</p>
-        <textarea name="description" id="" cols="30" rows="7"></textarea>
-      </label>
+        <label>
+          <p>Описание</p>
+          <textarea name="description" id="" cols="30" rows="7"></textarea>
+        </label>
 
-      <label>
-        <p>Количество</p>
-        <input type="text" name="count">
-      </label>
+        <label>
+          <p>Количество</p>
+          <input type="text" name="count">
+        </label>
 
-      <label>
-        <p>Цена</p>
-        <input type="text" name="price">
-      </label>
+        <label>
+          <p>Цена</p>
+          <input type="text" name="price">
+        </label>
+        <br>
+        <br>
+        <input type="file" value="Выберите файл">
+      </fieldset>
       <br>
-      <input type="file" value="Выберите файл">
-    </fieldset>
-    <br>
-    <button type="submit" formtarget="_blank">Добавить товар</button>
-  </form>
-
+      <button type="submit" formtarget="_blank">Добавить товар</button>
+    </form>
+  </main>
 </body>
 
 </html>
