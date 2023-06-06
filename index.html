@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRM-ShopOnline</title>
+</head>
+
+<body>
+  <p><b>Добавить товар</b></p>
+  <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+    <fieldset>
+      <label>
+        <p>Наименование</p>
+        <input type="text" name="name" minlength="8">
+      </label>
+
+      <label>
+        <p>Категория</p>
+        <input type="text" name="caregory">
+      </label>
+
+      <label>
+        <p>Единицы измерения</p>
+        <input type="text" name="units">
+      </label>
+
+      <label>
+        <p>Дисконт</p>
+        <input type="checkbox">
+        <input type="text" name="translation">
+      </label>
+
+      <label>
+        <p>Описание</p>
+        <textarea name="description" id="" cols="30" rows="7"></textarea>
+      </label>
+
+      <label>
+        <p>Количество</p>
+        <input type="text" name="count">
+      </label>
+
+      <label>
+        <p>Цена</p>
+        <input type="text" name="price">
+      </label>
+      <br>
+      <input type="file" value="Выберите файл">
+    </fieldset>
+    <br>
+    <button type="submit" formtarget="_blank">Добавить товар</button>
+  </form>
+
+</body>
+
+</html>
+
+
+
+<!-- git remote add origin https://github.com/Roman121082/CRM-ShopOnline.git
+git branch -M main
+git push -u origin main -->
