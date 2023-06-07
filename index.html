@@ -9,55 +9,44 @@
 </head>
 
 <body>
-  <header>
-    <p><b>Добавить товар</b></p>
-  </header>
-  <main>
-    <form action="https://jsonplaceholder.typicode.com/posts" method="POST">
+  <div>
+    <h3>Добавить товар</h3>
+    <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
       <fieldset>
-        <label>
-          <p>Наименование</p>
-          <input type="text" name="name" minlength="3">
-        </label>
+        <label for="name-product">Наименование</label>
+        <input type="text" name="Name-product" id="name-product" required>
 
-        <label>
-          <p>Категория</p>
-          <input type="text" name="caregory">
-        </label>
+        <label for="caregory">Категория</label>
+        <input type="text" name="caregory" id="caregory" required>
 
-        <label>
-          <p>Единицы измерения</p>
-          <input type="text" name="units">
-        </label>
+        <label for="units">Единицы измерения</label>
+        <input type="text" name="units" id="units" required>
 
-        <label>
-          <p>Дисконт</p>
-          <input type="checkbox">
-          <input type="text" name="translation">
-        </label>
+        <label for="discount"></label>
+        <div>
+          Добавить скидку<input type="checkbox">
+          Дисконт<input type="text" name="discount" id="discount">
+        </div>
 
-        <label>
-          <p>Описание</p>
-          <textarea name="description" id="" cols="30" rows="7"></textarea>
-        </label>
+        <label for="description">Описание</label>
+        <textarea name="description" id="description" rows="6" required></textarea>
 
-        <label>
-          <p>Количество</p>
-          <input type="text" name="count">
-        </label>
+        <label for="count">Количество</label>
+        <input name="count" id="count" required>
 
-        <label>
-          <p>Цена</p>
-          <input type="text" name="price">
-        </label>
-        <br>
-        <br>
+        <label for="price">Цена</label>
+        <input name="price" id="price" required>
+
         <input type="file" value="Выберите файл">
       </fieldset>
-      <br>
-      <button type="submit" formtarget="_blank">Добавить товар</button>
+      <button type="submit">Добавить товар</button>
     </form>
-  </main>
+  </div>
 </body>
+
+<footer>
+</footer>
+
+
 
 </html>
