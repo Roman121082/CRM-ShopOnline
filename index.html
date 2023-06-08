@@ -14,7 +14,7 @@
     <form action="https://jsonplaceholder.typicode.com/posts" method="POST" name="add-product">
       <fieldset>
         <label for="name-product">Наименование</label>
-        <input type="text" name="Name-product" id="name-product" required>
+        <input type="text" name="name-product" id="name-product" required>
 
         <label for="caregory">Категория</label>
         <input type="text" name="caregory" id="caregory" required>
@@ -22,10 +22,10 @@
         <label for="units">Единицы измерения</label>
         <input type="text" name="units" id="units" required>
 
-        <label for="discount"></label>
+        <label for="discount">Дисконт</label>
         <div>
-          Добавить скидку<input type="checkbox">
-          Дисконт<input type="text" name="discount" id="discount">
+          <input type="checkbox" aria-label="Добавить скидку">
+          <input type="text" name="discount" id="discount">
         </div>
 
         <label for="description">Описание</label>
